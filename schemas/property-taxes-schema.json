@@ -1,0 +1,66 @@
+{
+    "title": "property-taxes-by-parcel-id",
+    "type": "object",
+    "oneOf": [
+        {
+            "$ref": "#/definitions/property-taxes-by-parcel-id"
+        }
+    ],
+    "definitions": {
+        "property-taxes-by-parcel-id": {
+            "properties": {
+                "records": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/property-taxes-by-parcel-id_records"
+                    }
+                }
+            }
+        },
+        "property-taxes-by-parcel-id_records": {
+            "properties": {
+                "fields": {
+                    "type": "object",
+                    "properties": {
+                        "fiscalyear": {
+                            "type": "string",
+                            "title": "FiscalYear",
+                            "description": "Fiscal Year (July 1-June 30)"
+                        },
+                        "taxparcelid": {
+                            "type": "string",
+                            "title": "TaxParcelId",
+                            "description": "City tax parcel ID"
+                        },
+                        "span": {
+                            "type": "string",
+                            "title": "SPAN",
+                            "description": "School Property Account Number (State of VT)"
+                        },
+                        "streetaddress": {
+                            "type": "string",
+                            "title": "StreetAddress",
+                            "description": "Physical location"
+                        },
+                        "city": {
+                            "type": "string",
+                            "title": "City",
+                            "description": "Burlington (use for geomapping)"
+                        },
+                        "st": {
+                            "type": "string",
+                            "title": "St",
+                            "description": "VT (use for geomapping)"
+                        },
+                        "taxamount": {
+                            "type": "number",
+                            "title": "TaxAmount",
+                            "description": "Total Tax Amount",
+                            "unit": "$"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

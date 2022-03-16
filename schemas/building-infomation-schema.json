@@ -1,0 +1,222 @@
+{
+    "title": "property-building-data",
+    "type": "object",
+    "oneOf": [
+        {
+            "$ref": "#/definitions/property-building-data"
+        }
+    ],
+    "definitions": {
+        "property-building-data": {
+            "properties": {
+                "records": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/property-building-data_records"
+                    }
+                }
+            }
+        },
+        "property-building-data_records": {
+            "properties": {
+                "fields": {
+                    "type": "object",
+                    "properties": {
+                        "propertyid": {
+                            "type": "integer",
+                            "title": "PropertyId",
+                            "description": ""
+                        },
+                        "taxparcelid": {
+                            "type": "string",
+                            "title": "TaxParcelId",
+                            "description": ""
+                        },
+                        "vermontspan": {
+                            "type": "string",
+                            "title": "VermontSPAN",
+                            "description": "VT School Property Account Number (SPAN)"
+                        },
+                        "streetaddressformatted": {
+                            "type": "string",
+                            "title": "StreetAddressFormatted",
+                            "description": "Property Address"
+                        },
+                        "primarylandusecode": {
+                            "type": "string",
+                            "title": "PrimaryLandUseCode",
+                            "description": ""
+                        },
+                        "primarylandusedescription": {
+                            "type": "string",
+                            "title": "PrimaryLandUseDescription",
+                            "description": ""
+                        },
+                        "lastsaledate": {
+                            "type": "string",
+                            "format": "date",
+                            "title": "LastSaleDate",
+                            "description": "Last Valid Sale Date"
+                        },
+                        "lastsaleamount": {
+                            "type": "number",
+                            "title": "LastSaleAmount",
+                            "description": "Last Valid Sale Amt",
+                            "unit": "$"
+                        },
+                        "lotsqfeet": {
+                            "type": "integer",
+                            "title": "LotSqFeet",
+                            "description": "",
+                            "unit": "sqft"
+                        },
+                        "buildingvalue": {
+                            "type": "number",
+                            "title": "BuildingValue",
+                            "description": "",
+                            "unit": "$"
+                        },
+                        "landvalue": {
+                            "type": "number",
+                            "title": "LandValue",
+                            "description": "",
+                            "unit": "$"
+                        },
+                        "yarditemsvalue": {
+                            "type": "number",
+                            "title": "YardItemsValue",
+                            "description": "",
+                            "unit": "$"
+                        },
+                        "appraisedvalue": {
+                            "type": "number",
+                            "title": "AppraisedValue",
+                            "description": "",
+                            "unit": "$"
+                        },
+                        "assessedvalue": {
+                            "type": "number",
+                            "title": "AssessedValue",
+                            "description": "",
+                            "unit": "$"
+                        },
+                        "primaryneighborhoodcode": {
+                            "type": "string",
+                            "title": "PrimaryNeighborhoodCode",
+                            "description": ""
+                        },
+                        "primaryneighborhooddescription": {
+                            "type": "string",
+                            "title": "PrimaryNeighborhoodDescription",
+                            "description": ""
+                        },
+                        "buildingno": {
+                            "type": "integer",
+                            "title": "BuildingNo",
+                            "description": ""
+                        },
+                        "yearbuilt": {
+                            "type": "string",
+                            "format": "date",
+                            "title": "YearBuilt",
+                            "description": ""
+                        },
+                        "zoningcode": {
+                            "type": "string",
+                            "title": "ZoningCode",
+                            "description": ""
+                        },
+                        "zoningdistrict": {
+                            "type": "string",
+                            "title": "ZoningDistrict",
+                            "description": ""
+                        },
+                        "buildingtype": {
+                            "type": "string",
+                            "title": "BuildingType",
+                            "description": ""
+                        },
+                        "storyheight": {
+                            "type": "string",
+                            "title": "StoryHeight",
+                            "description": ""
+                        },
+                        "buildinggrossareasf": {
+                            "type": "integer",
+                            "title": "BuildingGrossAreaSF",
+                            "description": "",
+                            "unit": "sqft"
+                        },
+                        "buildingfinishedsf": {
+                            "type": "integer",
+                            "title": "BuildingFinishedSf",
+                            "description": "",
+                            "unit": "sqft"
+                        },
+                        "totalrooms": {
+                            "type": "integer",
+                            "title": "TotalRooms",
+                            "description": ""
+                        },
+                        "bedrooms": {
+                            "type": "integer",
+                            "title": "Bedrooms",
+                            "description": ""
+                        },
+                        "fullbaths": {
+                            "type": "integer",
+                            "title": "FullBaths",
+                            "description": ""
+                        },
+                        "halfbaths": {
+                            "type": "integer",
+                            "title": "HalfBaths",
+                            "description": ""
+                        },
+                        "foundationtype": {
+                            "type": "string",
+                            "title": "FoundationType",
+                            "description": ""
+                        },
+                        "heatfuel": {
+                            "type": "string",
+                            "title": "HeatFuel",
+                            "description": ""
+                        },
+                        "heattype": {
+                            "type": "string",
+                            "title": "HeatType",
+                            "description": ""
+                        },
+                        "residentialunits": {
+                            "type": "string",
+                            "title": "ResidentialUnits",
+                            "description": ""
+                        },
+                        "commercialunits": {
+                            "type": "string",
+                            "title": "CommercialUnits",
+                            "description": ""
+                        },
+                        "quality": {
+                            "type": "string",
+                            "title": "Quality",
+                            "description": ""
+                        },
+                        "physicalcondition": {
+                            "type": "string",
+                            "title": "PhysicalCondition",
+                            "description": ""
+                        },
+                        "depreciationpct": {
+                            "type": "number",
+                            "title": "DepreciationPct",
+                            "description": "",
+                            "unit": "%"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
